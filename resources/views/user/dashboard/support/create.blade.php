@@ -19,7 +19,7 @@
                                             Our Support Team will reply you within 12 hours.
                                         </p>
                                     </div>
-                                    <div class="col-lg-8 col-xl-5">
+                                    <div class="col-lg-8">
                                         <div class="mb-4">
                                             <label class="form-label" for="subject">Subject</label>
                                             <select name="subject" id="subject" class="form-select">
