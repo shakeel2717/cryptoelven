@@ -20,6 +20,19 @@
                 <span class="link-title">Packages</span>
             </a>
         </li>
+        <li class="nav-item nav-category">Withdraw Request</li>
+        <li class="nav-item">
+            <a href="{{ route('user.withdraw.index') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Withdraw</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.roi.withdraw.roiWithdraw') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Profit Withdraw</span>
+            </a>
+        </li>
 
         <li class="nav-item nav-category">Exit</li>
         <form action="{{ route('logout') }}" id="logoutForm" method="POST">

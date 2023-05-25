@@ -27,8 +27,6 @@ class WithdrawController extends Controller
             'address' => 'required|alpha_num',
         ]);
         
-        abort(404);
-
         // checking if balance is enough
         if ($validatedData['amount'] > balance(auth()->user()->id)) {
             return redirect()->back()->withErrors('Insufficient balance');

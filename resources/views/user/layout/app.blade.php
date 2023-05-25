@@ -132,6 +132,7 @@
         <script src="/assets/js/dashboard.js"></script>
         <script src="/assets/js/datepicker.js"></script>
         <script src="/assets/js/custom.js"></script>
+        <x-alert />
 </body>
 
 </html>
