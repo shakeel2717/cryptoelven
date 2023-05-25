@@ -366,44 +366,7 @@ $(function() {
   }
   // Apex chart3 end
 
-  // Progressgar1 start
-  if($('#progressbar1').length) {
-    var bar = new ProgressBar.Circle(progressbar1, {
-      color: colors.primary,
-      trailColor: gridLineColor,
-      // This has to be the same size as the maximum width to
-      // prevent clipping
-      strokeWidth: 4,
-      trailWidth: 1,
-      easing: 'easeInOut',
-      duration: 1400,
-      text: {
-        autoStyleContainer: false
-      },
-      from: { color: colors.primary, width: 1 },
-      to: { color: colors.primary, width: 4 },
-      // Set default step function for all animate calls
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-        circle.path.setAttribute('stroke-width', state.width);
-    
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-          circle.setText('');
-        } else {
-          circle.setText(value + '%');
-        }
-    
-      }
-    });
-    bar.text.style.fontFamily = "'Overpass', sans-serif;";
-    bar.text.style.fontSize = '3rem';
-    
-    bar.animate(.78);
-  }
-  // Progressgar1 start
-
-  // Monthly sales chart start
+    // Monthly sales chart start
   if($('#monthly-sales-chart').length) {
     var monthlySalesChart = document.getElementById('monthly-sales-chart').getContext('2d');
       new Chart(monthlySalesChart, {

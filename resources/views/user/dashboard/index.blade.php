@@ -100,7 +100,7 @@
                     {{ number_format(myPlanCount(auth()->user()->id), 2) }}
                 </h3>
                 <hr>
-                <div id="progressbar1" class="mx-auto"></div>
+                <canvas id="chart" progress="{{ networkCapProgress(auth()->user()->id) }}"></canvas>
                 <table class="table table-striped">
                     <thead class="text-left">
                         <tr>
