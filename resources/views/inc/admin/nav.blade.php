@@ -125,7 +125,7 @@
         <li class="nav-item">
             <a href="{{ route('admin.history.direct.reward') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">>Direct Rewards</span>
+                <span class="link-title">Direct Rewards</span>
             </a>
         </li>
         <li class="nav-item">
