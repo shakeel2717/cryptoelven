@@ -5,3 +5,9 @@ function logoutFunction() {
     // Submit the form
     form.submit();
 }
+
+function copyClipBoard() {
+    var copyText = document.getElementById("referInput");
+    copyText.select();
+    document.execCommand("copy");
+}
