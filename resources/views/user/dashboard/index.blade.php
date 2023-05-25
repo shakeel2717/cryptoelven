@@ -1,8 +1,5 @@
 @extends('user.layout.app')
 @section('title', 'Dashboard')
-@section('head')
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-@endsection
 @section('content')
 <div class="row">
     <div class="row flex-grow">
@@ -90,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
