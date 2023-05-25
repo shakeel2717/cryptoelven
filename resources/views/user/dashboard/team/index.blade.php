@@ -115,7 +115,7 @@
     <div id="content" class="app-content">
         <div class="row">
             <div class="col-12">
-                <a class="btn btn-outline-theme btn-lg active" href="{{ url()->previous() }}"> Go Back</a>
+                <a class="btn btn-primary btn-lg active" href="{{ url()->previous() }}"> Go Back</a>
             </div>
         </div>
         <br>

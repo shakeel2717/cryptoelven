@@ -7,6 +7,19 @@
                 <span class="link-title">Dashboard</span>
             </a>
         </li>
+        <li class="nav-item nav-category">Investment</li>
+        <li class="nav-item">
+            <a href="{{ route('user.deposit.index') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Add Balance</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.plan.index') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Packages</span>
+            </a>
+        </li>
 
         <li class="nav-item nav-category">Exit</li>
         <form action="{{ route('logout') }}" id="logoutForm" method="POST">

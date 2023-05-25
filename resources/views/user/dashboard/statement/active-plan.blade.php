@@ -30,7 +30,7 @@
                                         <td class="text-center text-capitalize">{{ $transaction->created_at }}</td>
                                         <td>
                                             <a href="{{ route('user.plan.active.refund', ['id' => $transaction->id]) }}"
-                                                class="btn btn-outline-theme btn-md active">Refund</a>
+                                                class="btn btn-primary btn-md active">Refund</a>
                                         </td>
                                     </tr>
                                 @empty

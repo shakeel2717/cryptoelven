@@ -287,7 +287,7 @@
                 <div class="p-3 px-4 mt-auto">
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
-                        <input class="btn d-block btn-outline-theme" type="submit" value="LOGOUT">
+                        <input class="btn d-block btn-primary" type="submit" value="LOGOUT">
                     </form>
                 </div>
             </div>

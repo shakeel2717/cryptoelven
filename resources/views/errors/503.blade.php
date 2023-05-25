@@ -27,7 +27,7 @@
             <h3>Whlile this webite under maintenance, You can Visit our Alt Server on <a
                     href="https://cryptsence.net/">Cryptsence.net</a> Version</h3>
             <hr />
-            <a href="https://cryptsence.net/" class="btn btn-outline-theme px-3 rounded-pill"><i
+            <a href="https://cryptsence.net/" class="btn btn-primary px-3 rounded-pill"><i
                     class="fa fa-arrow-left me-1 ms-n1"></i> Go to .net Version</a>
         </div>
         <!-- END error-page-content -->

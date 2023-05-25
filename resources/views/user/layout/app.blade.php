@@ -108,11 +108,12 @@
 
                 <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
                     <div>
-                        <h4 class="mb-3 mb-md-0">Welcome to Dashboard</h4>
+                        <h4 class="mb-3 mb-md-0">Welcome {{ auth()->user()->username }}</h4>
                     </div>
                 </div>
 
                 @yield('content')
+                
                 <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
                     <p class="text-muted text-center text-md-left">Copyright © {{ date('Y') }} {{ env('APP_NAME') }}. All rights reserved</p>
                     <p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i> by <a href="https://asanwebs.com/">ASAN WEBS</a> </p>

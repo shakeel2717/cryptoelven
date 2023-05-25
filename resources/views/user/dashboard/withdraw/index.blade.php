@@ -41,7 +41,7 @@
                             <div class="row push">
                                 <div class="col-lg-8 col-xl-5 offset-lg-4">
                                     <div class="mb-4">
-                                        <button type="submit" class="btn btn-outline-theme btn-lg active">
+                                        <button type="submit" class="btn btn-primary btn-lg active">
                                             <i class="fa fa-check-circle opacity-50 me-1"></i> Withdraw Request
                                         </button>
                                     </div>

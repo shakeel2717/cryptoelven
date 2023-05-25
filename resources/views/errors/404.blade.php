@@ -26,7 +26,7 @@
             <h1>Oops!</h1>
             <h3>We can't seem to find the page you're looking for</h3>
             <hr />
-            <a href="{{ route('user.dashboard') }}" class="btn btn-outline-theme px-3 rounded-pill"><i
+            <a href="{{ route('user.dashboard') }}" class="btn btn-primary px-3 rounded-pill"><i
                     class="fa fa-arrow-left me-1 ms-n1"></i> Go Back</a>
         </div>
         <!-- END error-page-content -->

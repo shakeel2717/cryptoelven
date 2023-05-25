@@ -15,7 +15,7 @@
                     <form action="{{ route('user.plan.store') }}" method="POST">
                         @csrf
                         <input type="hidden" name="plan_id" value="{{ $plan->id }}">
-                        <input class="btn btn-outline-theme btn-lg active" type="submit" value="Purchase now">
+                        <input class="btn btn-primary btn-lg active" type="submit" value="Purchase now">
                     </form>
                 </div>
             </div>
