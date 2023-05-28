@@ -13,7 +13,7 @@
                         <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                     </svg>
                     <h1 class="text-center">${{ number_format($plan->price, 2) }}</h1>
-                    <h5 class="text-primary text-center mb-4">Duration: {{ $plan->duration }} months</h5>
+                    <h5 class="text-primary text-center mb-4">Duration: {{ $plan->duration }} Days</h5>
                     <table class="mx-auto">
                         <tbody>
                             <tr>
@@ -29,7 +29,7 @@
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg></td>
                                 <td>
-                                    <p>Duration: {{ $plan->duration }} months</p>
+                                    <p>Duration: {{ $plan->duration }} Days</p>
                                 </td>
                             </tr>
                             <tr>

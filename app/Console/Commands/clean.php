@@ -277,80 +277,80 @@ class clean extends Command
         $plan = new Plan();
         $plan->name = "Learn & Earn";
         $plan->price = 50;
-        $plan->profit = 250;
-        $plan->duration = 24;
+        $plan->profit = 0.135;
+        $plan->duration = 720;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Basic";
-        $plan->price = 200;
-        $plan->profit = 250;
-        $plan->duration = 24;
+        $plan->price = 100;
+        $plan->profit = 0.26;
+        $plan->duration = 720;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Starter";
-        $plan->price = 500;
-        $plan->profit = 250;
-        $plan->duration = 24;
+        $plan->price = 200;
+        $plan->profit = 0.54;
+        $plan->duration = 720;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Beginner";
-        $plan->price = 1000;
-        $plan->profit = 300;
-        $plan->duration = 24;
+        $plan->price = 500;
+        $plan->profit = 1.66;
+        $plan->duration = 720;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Intermediate";
-        $plan->price = 3000;
-        $plan->profit = 300;
-        $plan->duration = 22;
+        $plan->price = 1000;
+        $plan->profit = 4;
+        $plan->duration = 600;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Advance";
-        $plan->price = 6000;
-        $plan->profit = 350;
-        $plan->duration = 22;
+        $plan->price = 2500;
+        $plan->profit = 10;
+        $plan->duration = 600;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Business";
-        $plan->price = 10000;
-        $plan->profit = 350;
-        $plan->duration = 22;
+        $plan->price = 5000;
+        $plan->profit = 22;
+        $plan->duration = 600;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Entrepreneur";
-        $plan->price = 15000;
-        $plan->profit = 380;
-        $plan->duration = 20;
+        $plan->price = 7500;
+        $plan->profit = 33;
+        $plan->duration = 600;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Professional";
-        $plan->price = 25000;
-        $plan->profit = 380;
-        $plan->duration = 18;
+        $plan->price = 15000;
+        $plan->profit = 74;
+        $plan->duration = 585;
         $plan->save();
 
         // create next package
         $plan = new Plan();
         $plan->name = "Owner";
-        $plan->price = 50000;
-        $plan->profit = 390;
-        $plan->duration = 17;
+        $plan->price = 25000;
+        $plan->profit = 154;
+        $plan->duration = 580;
         $plan->save();
 
         // inserting refer commision detail in database

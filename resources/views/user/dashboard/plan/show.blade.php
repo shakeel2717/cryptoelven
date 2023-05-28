@@ -7,11 +7,11 @@
                 <h1 class="h1 mb-3">
                     {{ $plan->name }} Plan ${{ number_format($plan->price, 2) }}
                 </h1>
-                <p>You are about to activate {{ $plan->name }} with the Amount of
+                <p class="my-4">You are about to activate {{ $plan->name }} with the Amount of
                     <b>${{ number_format($plan->price, 2) }}.</b> Plese click below Purchase now button to Confirm your
                     investment.
                 </p>
-                <div>
+                <div class="mb-4">
                     <form action="{{ route('user.plan.store') }}" method="POST">
                         @csrf
                         <input type="hidden" name="plan_id" value="{{ $plan->id }}">

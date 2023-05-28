@@ -68,11 +68,6 @@ class blockchain extends Command
             }
 
 
-            $calc = $userPlan->plan->profit / 100;
-            $durationCalculation = $userPlan->plan->price * $calc;
-            $durationLeft = $durationCalculation / $userPlan->plan->duration;
-            $monthLeft = $durationLeft / 30;
-
             // // checking if this user ROI is Stopped
             // if ($user->roi == 0) {
             //     Log::info($user->username.' User ROi is Stoped in Admin');
@@ -82,7 +77,7 @@ class blockchain extends Command
             // checking if this ROI already Inserted
             $transaction = RoiTransaction::where('user_id', $userPlan->user_id)
                 ->whereDate('created_at', Carbon::today())
-                ->where('amount', $monthLeft)
+                ->where('amount', $userPlan->plan->profit)
                 ->where('sum', 'in')
                 ->where('user_plan_id', $userPlan->id)
                 ->get();
@@ -94,7 +89,7 @@ class blockchain extends Command
             } else {
                 $transaction = new RoiTransaction();
                 $transaction->user_id = $userPlan->user_id;
-                $transaction->amount =  $monthLeft;
+                $transaction->amount =  $userPlan->plan->profit;
                 $transaction->status =  'approved';
                 $transaction->sum =  'in';
                 $transaction->reference =  $userPlan->plan->name;
@@ -112,7 +107,7 @@ class blockchain extends Command
                     if ($user) {
                         $passive = passive::where('level', 'Direct')->first();
                         if ($passive) {
-                            $directPassive = $monthLeft * $passive->value / 100;
+                            $directPassive = $userPlan->plan->profit * $passive->value / 100;
                             $security = myPlanCount($user->id) * 7;
                             if (networkCap($user->id) >= $security) {
                                 Log::info('networkCap Reached, Skipping this Complete loop');
@@ -135,7 +130,7 @@ class blockchain extends Command
                                 if ($user) {
                                     $passive = passive::where('level', 'Level 1')->first();
                                     if ($passive) {
-                                        $level1Passive = $monthLeft * $passive->value / 100;
+                                        $level1Passive = $userPlan->plan->profit * $passive->value / 100;
                                         $security = myPlanCount($user->id) * 7;
                                         if (networkCap($user->id) >= $security) {
                                             Log::info('networkCap Reached, Skipping this Complete loop');
@@ -158,7 +153,7 @@ class blockchain extends Command
                                             if ($user) {
                                                 $passive = passive::where('level', 'Level 2')->first();
                                                 if ($passive) {
-                                                    $level2Passive = $monthLeft * $passive->value / 100;
+                                                    $level2Passive = $userPlan->plan->profit * $passive->value / 100;
                                                     $security = myPlanCount($user->id) * 7;
                                                     if (networkCap($user->id) >= $security) {
                                                         Log::info('networkCap Reached, Skipping this Complete loop');
