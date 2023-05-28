@@ -22,19 +22,22 @@ class WithdrawController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'amount' => 'required|numeric|min:20',
+            'amount' => 'required|numeric|min:25',
             'method' => 'required|string|max:255',
             'address' => 'required|alpha_num',
         ]);
-        
+
         // checking if balance is enough
         if ($validatedData['amount'] > balance(auth()->user()->id)) {
             return redirect()->back()->withErrors('Insufficient balance');
         }
 
+        $withdrawFees = $validatedData['amount'] * 3 / 100;
+        $amount = $validatedData['amount'] - $withdrawFees;
+
         $withdraw = new Withdraw();
         $withdraw->user_id = auth()->user()->id;
-        $withdraw->amount = $validatedData['amount'];
+        $withdraw->amount = $amount;
         $withdraw->method = $validatedData['method'];
         $withdraw->address = $validatedData['address'];
         $withdraw->save();
@@ -42,8 +45,17 @@ class WithdrawController extends Controller
         // inserting Plan Activate Transaction
         $withdraw = new Transaction();
         $withdraw->user_id = auth()->user()->id;
-        $withdraw->amount = $validatedData['amount'];
+        $withdraw->amount = $amount;
         $withdraw->type = 'withdraw';
+        $withdraw->sum = 'out';
+        $withdraw->status = 'pending';
+        $withdraw->save();
+
+        // inserting Plan Activate Transaction
+        $withdraw = new Transaction();
+        $withdraw->user_id = auth()->user()->id;
+        $withdraw->amount = $withdrawFees;
+        $withdraw->type = 'withdraw fees';
         $withdraw->sum = 'out';
         $withdraw->status = 'pending';
         $withdraw->save();
@@ -83,6 +95,9 @@ class WithdrawController extends Controller
             return redirect()->back()->withErrors('Issue in Withdraw Profit, kindly contact admin');
         }
 
+        $withdrawFees = $validatedData['amount'] * 3 / 100;
+        $amount = $validatedData['amount'] - $withdrawFees;
+
         $ProfitWithdraw = new ProfitWithdraw();
         $ProfitWithdraw->user_id = auth()->user()->id;
         $ProfitWithdraw->amount = $validatedData['amount'];
@@ -93,10 +108,19 @@ class WithdrawController extends Controller
 
         $transaction = new RoiTransaction();
         $transaction->user_id = auth()->user()->id;
-        $transaction->amount = $validatedData['amount'];
+        $transaction->amount = $amount;
         $transaction->status =  'pending';
         $transaction->sum =  'out';
         $transaction->reference = 'self withdraw';
+        $transaction->user_plan_id = 'withdraw balance';
+        $transaction->save();
+
+        $transaction = new RoiTransaction();
+        $transaction->user_id = auth()->user()->id;
+        $transaction->amount = $withdrawFees;
+        $transaction->status =  'pending';
+        $transaction->sum =  'out';
+        $transaction->reference = 'withdraw fees';
         $transaction->user_plan_id = 'withdraw balance';
         $transaction->save();
 

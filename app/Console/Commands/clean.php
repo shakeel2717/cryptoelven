@@ -356,7 +356,7 @@ class clean extends Command
         // inserting refer commision detail in database
         $affiliate = new Affiliate();
         $affiliate->level = "Direct";
-        $affiliate->value = 10;
+        $affiliate->value = 8;
         $affiliate->save();
 
         $affiliate = new Affiliate();
@@ -371,7 +371,7 @@ class clean extends Command
 
         $affiliate = new Affiliate();
         $affiliate->level = "Level 3";
-        $affiliate->value = 2;
+        $affiliate->value = 3;
         $affiliate->save();
 
         $affiliate = new Affiliate();
@@ -387,6 +387,26 @@ class clean extends Command
         $affiliate = new Affiliate();
         $affiliate->level = "Level 6";
         $affiliate->value = 1;
+        $affiliate->save();
+
+        $affiliate = new Affiliate();
+        $affiliate->level = "Level 7";
+        $affiliate->value = 0.50;
+        $affiliate->save();
+
+        $affiliate = new Affiliate();
+        $affiliate->level = "Level 8";
+        $affiliate->value = 0.50;
+        $affiliate->save();
+
+        $affiliate = new Affiliate();
+        $affiliate->level = "Level 9";
+        $affiliate->value = 0.25;
+        $affiliate->save();
+
+        $affiliate = new Affiliate();
+        $affiliate->level = "Level 10";
+        $affiliate->value = 0.25;
         $affiliate->save();
 
 
@@ -410,7 +430,7 @@ class clean extends Command
         $directAward->name = "PREMIUM";
         $directAward->business_from = 5000;
         $directAward->business_to = 9999;
-        $directAward->award = 300;
+        $directAward->award = 50;
         $directAward->global = 0.25;
         $directAward->save();
 
@@ -418,7 +438,7 @@ class clean extends Command
         $directAward->name = "EXECUTIVE";
         $directAward->business_from = 10000;
         $directAward->business_to = 24999;
-        $directAward->award = 700;
+        $directAward->award = 200;
         $directAward->global = 0.35;
         $directAward->save();
 
@@ -426,7 +446,7 @@ class clean extends Command
         $directAward->name = "DIAMOND";
         $directAward->business_from = 25000;
         $directAward->business_to = 49999;
-        $directAward->award = 3000;
+        $directAward->award = 1000;
         $directAward->global = 0.50;
         $directAward->save();
 
@@ -435,25 +455,25 @@ class clean extends Command
         $directAward->name = "Representative";
         $directAward->business_from = 50000;
         $directAward->business_to = 99999;
-        $directAward->award = 7000;
-        $directAward->global = 1.00;
+        $directAward->award = 5000;
+        $directAward->global = 0.75;
         $directAward->save();
 
 
         $directAward = new directAward();
         $directAward->name = "manager";
         $directAward->business_from = 100000;
-        $directAward->business_to = 249999;
-        $directAward->award = 12000;
-        $directAward->global = 1.50;
+        $directAward->business_to = 149999;
+        $directAward->award = 8000;
+        $directAward->global = 1;
         $directAward->save();
 
         $directAward = new directAward();
         $directAward->name = "DIRECTOR";
-        $directAward->business_from = 250000;
-        $directAward->business_to = 499999;
-        $directAward->award = 25000;
-        $directAward->global = 2.00;
+        $directAward->business_from = 150000;
+        $directAward->business_to = 249999;
+        $directAward->award = 20000;
+        $directAward->global = 1.5;
         $directAward->save();
 
 
