@@ -277,7 +277,7 @@ class clean extends Command
         $plan = new Plan();
         $plan->name = "Learn & Earn";
         $plan->price = 50;
-        $plan->profit = 0.135;
+        $plan->profit = 0.13;
         $plan->duration = 720;
         $plan->save();
 
@@ -476,53 +476,6 @@ class clean extends Command
         $directAward->global = 1.5;
         $directAward->save();
 
-
-        // In-Direct Award
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "Squire";
-        $inDirectAward->business_from = 5000;
-        $inDirectAward->business_to = 9999;
-        $inDirectAward->award = 50;
-        $inDirectAward->save();
-
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "Executor";
-        $inDirectAward->business_from = 10000;
-        $inDirectAward->business_to = 24999;
-        $inDirectAward->award = 200;
-        $inDirectAward->save();
-
-
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "High Minister";
-        $inDirectAward->business_from = 25000;
-        $inDirectAward->business_to = 49999;
-        $inDirectAward->award = 500;
-        $inDirectAward->save();
-
-
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "Royal Paladin";
-        $inDirectAward->business_from = 50000;
-        $inDirectAward->business_to = 99999;
-        $inDirectAward->award = 1000;
-        $inDirectAward->save();
-
-
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "Regent";
-        $inDirectAward->business_from = 100000;
-        $inDirectAward->business_to = 249999;
-        $inDirectAward->award = 3000;
-        $inDirectAward->save();
-
-
-        $inDirectAward = new InDirectAward();
-        $inDirectAward->name = "Ambassador";
-        $inDirectAward->business_from = 250000;
-        $inDirectAward->business_to = 49999999;
-        $inDirectAward->award = 10000;
-        $inDirectAward->save();
 
         return 0;
     }

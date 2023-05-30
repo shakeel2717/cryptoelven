@@ -4,41 +4,41 @@
 <div class="row">
     <div class="row flex-grow">
         <div class="col-md-4 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Earning Balance','value' => number_format(balance(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'Current Balance','value' => number_format(balance(auth()->user()->id), 2)])
         </div>
         <div class="col-md-4 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Overall Income','value' => number_format(inBalance(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'All Income','value' => number_format(inBalance(auth()->user()->id), 2)])
         </div>
         <div class="col-md-4 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Overall Withdraw','value' => number_format(withdraw(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'All Withdraw','value' => number_format(withdraw(auth()->user()->id), 2)])
         </div>
     </div>
 </div>
 <div class="row">
     <div class="row flex-grow">
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Daily Profit','value' => number_format(roiBalance(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'ROI Profit','value' => number_format(roiBalance(auth()->user()->id), 2)])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Profit Delivered','value' => number_format(roiBalanceDelivered(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'ROI Delivered','value' => number_format(roiBalanceDelivered(auth()->user()->id), 2)])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Direct Commission','value' => number_format(directCommission(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'Direct Bonus','value' => number_format(directCommission(auth()->user()->id), 2)])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'In-Direct Team Comm.','value' => number_format(inDirectTotalCommission(auth()->user()->id), 2)])
+            @include('inc.card',['title' => 'Uni-Level Team Bonus','value' => number_format(inDirectTotalCommission(auth()->user()->id), 2)])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Team Invested Earning','value' => number_format(passive(auth()->user()->id), 2) ])
+            @include('inc.card',['title' => 'Ransk & Reward','value' => number_format(passive(auth()->user()->id), 2) ])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Invested Profit','value' => number_format(userGotRoi(auth()->user()->id), 2) ])
+            @include('inc.card',['title' => 'Global Share','value' => number_format(userGotRoi(auth()->user()->id), 2) ])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Invested Profit Estimate','value' => number_format(userWillGetRoi(auth()->user()->id), 2) ])
+            @include('inc.card',['title' => 'Remianing ROI','value' => number_format(userWillGetRoi(auth()->user()->id), 2) ])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Overall Sales','value' => number_format(overallSale(auth()->user()->id), 2) ])
+            @include('inc.card',['title' => 'Group Sale','value' => number_format(overallSale(auth()->user()->id), 2) ])
         </div>
     </div>
 </div>
@@ -46,7 +46,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Invite Friends & Earn Rewards</h5>
+                <h5 class="card-title">Invite Friends (Refer Link)</h5>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <div class="my-2">
@@ -95,7 +95,7 @@
     <div class="col-md-4 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Active investment Detail</h5>
+                <h5 class="card-title">5x Network Cap</h5>
                 <h3 class="text-uppercase ">
                     {{ number_format(myPlanCount(auth()->user()->id), 2) }}
                 </h3>

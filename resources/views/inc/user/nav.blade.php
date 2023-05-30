@@ -37,13 +37,7 @@
         <li class="nav-item">
             <a href="{{ route('user.statement.ranks') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Direct Rank</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.ranks.indirect') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">In-Direct Rank</span>
+                <span class="link-title">Ransk & Reward</span>
             </a>
         </li>
         <li class="nav-item nav-category">Affiliate Detail</li>
@@ -59,13 +53,7 @@
                 <span class="link-title">Direct Team</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.inDirect.team') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">In-Direct Team</span>
-            </a>
-        </li>
-        <li class="nav-item nav-category">My InDirect Comm.</li>
+        <li class="nav-item nav-category">Uni-Level Bonus</li>
         <li class="nav-item">
             <a href="{{ route('user.statement.indirect.level1') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
@@ -102,17 +90,41 @@
                 <span class="link-title">Level 6 Commission</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Level 7 Commission</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Level 8 Commission</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Level 9 Commission</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">Level 10 Commission</span>
+            </a>
+        </li>
         <li class="nav-item nav-category">Account Statement</li>
         <li class="nav-item">
             <a href="{{ route('user.statement.deposits') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All Deposits</span>
+                <span class="link-title">All Topup</span>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{ route('user.plan.active.index') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All Investment</span>
+                <span class="link-title">Total Pacakges</span>
             </a>
         </li>
         <li class="nav-item">
@@ -124,50 +136,31 @@
         <li class="nav-item">
             <a href="{{ route('user.statement.roi') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Daily Profits</span>
+                <span class="link-title">ROI Profit</span>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{ route('user.statement.roi.withdrawals') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Daily Profits Withdrawals</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.passive') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All Team Earning</span>
+                <span class="link-title">ROI Withdrawals</span>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{ route('user.statement.direct') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Direct Commission</span>
+                <span class="link-title">Direct Bonus</span>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{ route('user.statement.reward') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Direct Business Reward</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.award') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">In-Direct Business Reward</span>
+                <span class="link-title">Direct Ranks History</span>
             </a>
         </li>
         <li class="nav-item">
             <a href="{{ route('user.statement.global.share') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
                 <span class="link-title">Global Share Reward</span>
-            </a>
-        </li>
-        <li class="nav-item nav-category">Refund</li>
-        <li class="nav-item">
-            <a href="{{ route('user.plan.active.index') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Capital Refund Request</span>
             </a>
         </li>
         <li class="nav-item nav-category">My Account</li>

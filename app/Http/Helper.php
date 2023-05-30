@@ -313,7 +313,7 @@ function networkCap($user_id)
 
 function networkCapReach($user_id)
 {
-    return myPlanCount($user_id) * 7;
+    return myPlanCount($user_id) * 5;
 }
 
 
@@ -321,7 +321,7 @@ function networkCapReach($user_id)
 
 function networkCapProgress($user_id)
 {
-    $security = myPlanCount($user_id) * 7; // 7000
+    $security = myPlanCount($user_id) * 5; // 7000
     $cap = networkCap($user_id); // 8000
     if ($security < 1) {
         return 1;
@@ -341,7 +341,7 @@ function networkCapProgress($user_id)
 function networkCapRemovedBalance($user_id)
 {
     return Transaction::where('user_id', $user_id)
-        ->where('type', '7x cap reached')
+        ->where('type', '5x cap reached')
         ->where('sum', 'out')
         ->sum('amount');
 }
@@ -742,7 +742,7 @@ function totalIndirectBusiness($user_id)
 function coinPaymentDeposit()
 {
     // getting only pure investment
-    $transaction = Transaction::where('type', 'deposit')->where('reference', 'coinPayment Gateway')->sum('amount');
+    $transaction = Transaction::where('type', 'deposit')->sum('amount');
     return $transaction;
 }
 
