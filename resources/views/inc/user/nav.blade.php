@@ -50,7 +50,7 @@
         <li class="nav-item">
             <a href="{{ route('user.statement.direct.team') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Direct Team</span>
+                <span class="link-title">Direct Refer</span>
             </a>
         </li>
         <li class="nav-item nav-category">Uni-Level Bonus</li>
@@ -118,7 +118,7 @@
         <li class="nav-item">
             <a href="{{ route('user.statement.deposits') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All Topup</span>
+                <span class="link-title">All Deposit</span>
             </a>
         </li>
         <li class="nav-item">
