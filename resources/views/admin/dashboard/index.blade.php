@@ -109,7 +109,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ $totalInvest->sum('plan.price') - 24350 }}
+                                    {{ $totalInvest->sum('plan.price') }}
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ $activeInvest->sum('plan.price') - 18800 }}
+                                    {{ $activeInvest->sum('plan.price') }}
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(totalPureInvestment() - 16700, 2) }}
+                                    ${{ number_format(totalPureInvestment(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format($totalInvest->sum('plan.price') - totalPureInvestment() - 7650, 2) }}
+                                    ${{ number_format($totalInvest->sum('plan.price') - totalPureInvestment(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format((coinPaymentDeposit() - 600) - 78691.44, 2) }}
+                                    ${{ number_format((coinPaymentDeposit()), 2) }}
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(adminDeposit() - 1105112, 2) }}
+                                    ${{ number_format(adminDeposit(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    $354467.64
+                                    0
                             </div>
                         </div>
                     </div>
@@ -326,7 +326,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    $143552.68
+                                    0
                             </div>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    $136513.68
+                                    0
                             </div>
                         </div>
                     </div>
@@ -375,7 +375,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(networkPinInvest() - 1000, 2) }}
+                                    ${{ number_format(networkPinInvest(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -400,7 +400,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(roiStoppedInvest() - 1100, 2) }}
+                                    ${{ number_format(roiStoppedInvest(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -474,7 +474,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(($withdraw->where('hide', false)->sum('amount') + 700 + 620) - 8986.35, 2) }}
+                                    ${{ number_format(($withdraw->where('hide', false)->sum('amount')), 2) }}
                             </div>
                         </div>
                     </div>
@@ -498,7 +498,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(($withdraw->where('status', 'approved')->where('hide', false)->sum('amount') + 700 + 620) - 8986.35 ,2) }}
+                                    ${{ number_format(($withdraw->where('status', 'approved')->where('hide', false)->sum('amount')),2) }}
                             </div>
                         </div>
                     </div>
@@ -546,7 +546,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ $withdraw->where('hide', false)->count() - 48 }}
+                                    {{ $withdraw->where('hide', false)->count() }}
                             </div>
                         </div>
                     </div>
@@ -571,7 +571,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(($roi->where('hide', false)->sum('amount') + 500) - 16325.19, 2) }}
+                                    ${{ number_format(($roi->where('hide', false)->sum('amount')), 2) }}
                             </div>
                         </div>
                     </div>
@@ -595,7 +595,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    ${{ number_format(($roi->where('hide', false)->where('status', 'approved')->sum('amount') + 500) - 16325.19,2) }}
+                                    ${{ number_format(($roi->where('hide', false)->where('status', 'approved')->sum('amount') ),2) }}
                             </div>
                         </div>
                     </div>
@@ -643,7 +643,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ $roi->where('hide', false)->count() - 89 }}
+                                    {{ $roi->where('hide', false)->count() }}
                             </div>
                         </div>
                     </div>
@@ -667,7 +667,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ number_format(totalPaidRoi() - 548084.55, 2) }}
+                                    {{ number_format(totalPaidRoi(), 2) }}
                             </div>
                         </div>
                     </div>
@@ -691,7 +691,7 @@
                         <div class="row align-items-center mb-2">
                             <div class="col-7">
                                 <h3 class="mb-0">
-                                    {{ number_format(todayPaidRoi() -79.48 , 2) }}
+                                    {{ number_format(todayPaidRoi() , 2) }}
                             </div>
                         </div>
                     </div>
