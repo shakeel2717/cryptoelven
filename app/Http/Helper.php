@@ -922,9 +922,9 @@ function userWillGetRoi($user_id)
     $userPlans = UserPlan::where('user_id', $user_id)->get();
     $amount = 0;
     foreach ($userPlans as $plan) {
-        $price = $plan->plan->price;
+        $duration = $plan->plan->duration;
         $profit = $plan->plan->profit;
-        $amount += $price * $profit / 100;
+        $amount += $price * $duration;
     }
     return $amount - userGotRoi($user_id);
 }
