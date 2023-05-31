@@ -21,7 +21,6 @@ class UserDashboardController extends Controller
         $teamInDirect1 = Transaction::where('user_id', auth()->user()->id)->where('type', 'passive income 2')->sum('amount');
         $teamInDirect2 = Transaction::where('user_id', auth()->user()->id)->where('type', 'passive income 3')->sum('amount');
         $address = HeedCoin::where('user_id', auth()->user()->id)->first();
-        sleep(10);
         return view('user.dashboard.index', compact('address','transactions', 'refers', 'teamDirect', 'teamInDirect1', 'teamInDirect2'));
     }
 
