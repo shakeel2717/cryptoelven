@@ -14,6 +14,7 @@ class DepositController extends Controller
      */
     public function index()
     {
+        sleep(10);
         return view('user.dashboard.deposit.index');
     }
 
