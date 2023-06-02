@@ -275,7 +275,7 @@ class clean extends Command
 
         // create new package
         $plan = new Plan();
-        $plan->name = "Learn & Earn";
+        $plan->name = "STANDARD";
         $plan->price = 50;
         $plan->profit = 0.13;
         $plan->duration = 720;
@@ -283,7 +283,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Basic";
+        $plan->name = "BASIC";
         $plan->price = 100;
         $plan->profit = 0.26;
         $plan->duration = 720;
@@ -291,7 +291,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Starter";
+        $plan->name = "PROFESSIONAL";
         $plan->price = 200;
         $plan->profit = 0.54;
         $plan->duration = 720;
@@ -299,7 +299,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Beginner";
+        $plan->name = "PRO";
         $plan->price = 500;
         $plan->profit = 1.66;
         $plan->duration = 720;
@@ -307,7 +307,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Intermediate";
+        $plan->name = "ADVANCED";
         $plan->price = 1000;
         $plan->profit = 4;
         $plan->duration = 600;
@@ -315,7 +315,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Advance";
+        $plan->name = "PLUS";
         $plan->price = 2500;
         $plan->profit = 10;
         $plan->duration = 600;
@@ -323,7 +323,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Business";
+        $plan->name = "CROWN";
         $plan->price = 5000;
         $plan->profit = 22;
         $plan->duration = 600;
@@ -331,7 +331,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Entrepreneur";
+        $plan->name = "LOIN";
         $plan->price = 7500;
         $plan->profit = 33;
         $plan->duration = 600;
@@ -339,7 +339,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Professional";
+        $plan->name = "GOLD";
         $plan->price = 15000;
         $plan->profit = 74;
         $plan->duration = 585;
@@ -347,7 +347,7 @@ class clean extends Command
 
         // create next package
         $plan = new Plan();
-        $plan->name = "Owner";
+        $plan->name = "DIAMOND";
         $plan->price = 25000;
         $plan->profit = 154;
         $plan->duration = 580;

@@ -294,79 +294,6 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="d-flex fw-bold small mb-3">
-                            <span class="flex-grow-1">CoinPayment Deposits Old</span>
-                            <a href="#" data-toggle="card-expand"
-                                class="text-white text-opacity-50 text-decoration-none"><i
-                                    class="bi bi-fullscreen"></i></a>
-                        </div>
-                        <div class="row align-items-center mb-2">
-                            <div class="col-7">
-                                <h3 class="mb-0">
-                                    0
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex fw-bold small mb-3">
-                            <span class="flex-grow-1">Approved Withdraw Old</span>
-                            <a href="#" data-toggle="card-expand"
-                                class="text-white text-opacity-50 text-decoration-none"><i
-                                    class="bi bi-fullscreen"></i></a>
-                        </div>
-                        <div class="row align-items-center mb-2">
-                            <div class="col-7">
-                                <h3 class="mb-0">
-                                    0
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex fw-bold small mb-3">
-                            <span class="flex-grow-1">Approved ROI Old</span>
-                            <a href="#" data-toggle="card-expand"
-                                class="text-white text-opacity-50 text-decoration-none"><i
-                                    class="bi bi-fullscreen"></i></a>
-                        </div>
-                        <div class="row align-items-center mb-2">
-                            <div class="col-7">
-                                <h3 class="mb-0">
-                                    0
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-xl-3 col-lg-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex fw-bold small mb-3">
                             <span class="flex-grow-1">Network Investment</span>
                             <a href="#" data-toggle="card-expand"
                                 class="text-white text-opacity-50 text-decoration-none"><i
@@ -401,30 +328,6 @@
                             <div class="col-7">
                                 <h3 class="mb-0">
                                     ${{ number_format(roiStoppedInvest(), 2) }}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex fw-bold small mb-3">
-                            <span class="flex-grow-1">Passive Stopped Investment</span>
-                            <a href="#" data-toggle="card-expand"
-                                class="text-white text-opacity-50 text-decoration-none"><i
-                                    class="bi bi-fullscreen"></i></a>
-                        </div>
-                        <div class="row align-items-center mb-2">
-                            <div class="col-7">
-                                <h3 class="mb-0">
-                                    ${{ number_format(passiveStoppedInvest(), 2) }}
                             </div>
                         </div>
                     </div>

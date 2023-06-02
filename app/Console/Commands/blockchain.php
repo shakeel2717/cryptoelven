@@ -62,10 +62,10 @@ class blockchain extends Command
             }
 
             // checking if this user plan activate today
-            if ($userPlan->created_at->format('Y-m-d') == Carbon::now()->format('Y-m-d')) {
-                Log::info($user->username . ' User Plan is activate today, skipping :' .  $userPlan->created_at);
-                goto endThisUser;
-            }
+            // if ($userPlan->created_at->format('Y-m-d') == Carbon::now()->format('Y-m-d')) {
+            //     Log::info($user->username . ' User Plan is activate today, skipping :' .  $userPlan->created_at);
+            //     goto endThisUser;
+            // }
 
 
             // // checking if this user ROI is Stopped
