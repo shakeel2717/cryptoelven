@@ -99,86 +99,86 @@ class blockchain extends Command
             }
 
             // Passive Income upto 2 levels
-            // checking if this user has valid refer
-            if ($user->refer != 'default') {
-                // checking if passive income is stopped in admin
-                if ($user->passive == 1) {
-                    $user = User::where('username', $user->refer)->first();
-                    if ($user) {
-                        $passive = passive::where('level', 'Direct')->first();
-                        if ($passive) {
-                            $directPassive = $userPlan->plan->profit * $passive->value / 100;
-                            $security = myPlanCount($user->id) * 7;
-                            if (networkCap($user->id) >= $security) {
-                                Log::info('networkCap Reached, Skipping this Complete loop');
-                                goto endThisUser;
-                            }
-                            $transaction = new Transaction();
-                            $transaction->user_id = $user->id;
-                            $transaction->type =  'passive income 1';
-                            $transaction->amount =  $directPassive;
-                            $transaction->status =  'approved';
-                            $transaction->sum =  'in';
-                            $transaction->reference =  $userPlan->user->username;
-                            $transaction->save();
+            // // checking if this user has valid refer
+            // if ($user->refer != 'default') {
+            //     // checking if passive income is stopped in admin
+            //     if ($user->passive == 1) {
+            //         $user = User::where('username', $user->refer)->first();
+            //         if ($user) {
+            //             $passive = passive::where('level', 'Direct')->first();
+            //             if ($passive) {
+            //                 $directPassive = $userPlan->plan->profit * $passive->value / 100;
+            //                 $security = myPlanCount($user->id) * 7;
+            //                 if (networkCap($user->id) >= $security) {
+            //                     Log::info('networkCap Reached, Skipping this Complete loop');
+            //                     goto endThisUser;
+            //                 }
+            //                 $transaction = new Transaction();
+            //                 $transaction->user_id = $user->id;
+            //                 $transaction->type =  'passive income 1';
+            //                 $transaction->amount =  $directPassive;
+            //                 $transaction->status =  'approved';
+            //                 $transaction->sum =  'in';
+            //                 $transaction->reference =  $userPlan->user->username;
+            //                 $transaction->save();
 
-                            Log::info('passive income 1: ' . $user->username . ' Successfully');
+            //                 Log::info('passive income 1: ' . $user->username . ' Successfully');
 
-                            // checking if this user has valid refer
-                            if ($user->refer != 'default') {
-                                $user = User::where('username', $user->refer)->first();
-                                if ($user) {
-                                    $passive = passive::where('level', 'Level 1')->first();
-                                    if ($passive) {
-                                        $level1Passive = $userPlan->plan->profit * $passive->value / 100;
-                                        $security = myPlanCount($user->id) * 7;
-                                        if (networkCap($user->id) >= $security) {
-                                            Log::info('networkCap Reached, Skipping this Complete loop');
-                                            goto endThisUser;
-                                        }
-                                        $transaction = new Transaction();
-                                        $transaction->user_id = $user->id;
-                                        $transaction->type =  'passive income 2';
-                                        $transaction->amount =  $level1Passive;
-                                        $transaction->status =  'approved';
-                                        $transaction->sum =  'in';
-                                        $transaction->reference =  $userPlan->user->username;
-                                        $transaction->save();
+            //                 // checking if this user has valid refer
+            //                 if ($user->refer != 'default') {
+            //                     $user = User::where('username', $user->refer)->first();
+            //                     if ($user) {
+            //                         $passive = passive::where('level', 'Level 1')->first();
+            //                         if ($passive) {
+            //                             $level1Passive = $userPlan->plan->profit * $passive->value / 100;
+            //                             $security = myPlanCount($user->id) * 7;
+            //                             if (networkCap($user->id) >= $security) {
+            //                                 Log::info('networkCap Reached, Skipping this Complete loop');
+            //                                 goto endThisUser;
+            //                             }
+            //                             $transaction = new Transaction();
+            //                             $transaction->user_id = $user->id;
+            //                             $transaction->type =  'passive income 2';
+            //                             $transaction->amount =  $level1Passive;
+            //                             $transaction->status =  'approved';
+            //                             $transaction->sum =  'in';
+            //                             $transaction->reference =  $userPlan->user->username;
+            //                             $transaction->save();
 
-                                        Log::info('passive income 2: ' . $user->username . ' Successfully');
+            //                             Log::info('passive income 2: ' . $user->username . ' Successfully');
 
-                                        // checking if this user has valid refer
-                                        if ($user->refer != 'default') {
-                                            $user = User::where('username', $user->refer)->first();
-                                            if ($user) {
-                                                $passive = passive::where('level', 'Level 2')->first();
-                                                if ($passive) {
-                                                    $level2Passive = $userPlan->plan->profit * $passive->value / 100;
-                                                    $security = myPlanCount($user->id) * 7;
-                                                    if (networkCap($user->id) >= $security) {
-                                                        Log::info('networkCap Reached, Skipping this Complete loop');
-                                                        goto endThisUser;
-                                                    }
-                                                    $transaction = new Transaction();
-                                                    $transaction->user_id = $user->id;
-                                                    $transaction->type =  'passive income 3';
-                                                    $transaction->amount =  $level2Passive;
-                                                    $transaction->status =  'approved';
-                                                    $transaction->sum =  'in';
-                                                    $transaction->reference =  $userPlan->user->username;
-                                                    $transaction->save();
+            //                             // checking if this user has valid refer
+            //                             if ($user->refer != 'default') {
+            //                                 $user = User::where('username', $user->refer)->first();
+            //                                 if ($user) {
+            //                                     $passive = passive::where('level', 'Level 2')->first();
+            //                                     if ($passive) {
+            //                                         $level2Passive = $userPlan->plan->profit * $passive->value / 100;
+            //                                         $security = myPlanCount($user->id) * 7;
+            //                                         if (networkCap($user->id) >= $security) {
+            //                                             Log::info('networkCap Reached, Skipping this Complete loop');
+            //                                             goto endThisUser;
+            //                                         }
+            //                                         $transaction = new Transaction();
+            //                                         $transaction->user_id = $user->id;
+            //                                         $transaction->type =  'passive income 3';
+            //                                         $transaction->amount =  $level2Passive;
+            //                                         $transaction->status =  'approved';
+            //                                         $transaction->sum =  'in';
+            //                                         $transaction->reference =  $userPlan->user->username;
+            //                                         $transaction->save();
 
-                                                    Log::info('passive income 3: ' . $user->username . ' Successfully');
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            //                                         Log::info('passive income 3: ' . $user->username . ' Successfully');
+            //                                     }
+            //                                 }
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
             endThisUser:
 
 
@@ -240,55 +240,55 @@ class blockchain extends Command
 
 
             // InDirect Business Reward Section Start
-            $user = User::find($userPlan->user_id);
-            Log::info('InDirect Business Reward Section Started');
-            if (inDirectBusiness($userPlan->user_id) > 0) {
-                // proccess for direct award
-                $awardSlab = inDirectAward($userPlan->user_id);
-                Log::info('in direct award slab' . $awardSlab);
-                $awardSlabRow = inDirectAward::where('name', $awardSlab)->first();
-                if ($awardSlabRow != "") {
+            // $user = User::find($userPlan->user_id);
+            // Log::info('InDirect Business Reward Section Started');
+            // if (inDirectBusiness($userPlan->user_id) > 0) {
+            //     // proccess for direct award
+            //     $awardSlab = inDirectAward($userPlan->user_id);
+            //     Log::info('in direct award slab' . $awardSlab);
+            //     $awardSlabRow = inDirectAward::where('name', $awardSlab)->first();
+            //     if ($awardSlabRow != "") {
 
-                    // InDirect Business Award Start for all Slabs
-                    $inDirectAwards = inDirectAward::get();
-                    foreach ($inDirectAwards as $inDirectAward) {
-                        // checking if already inserted
-                        $transaction = Transaction::where('user_id', $userPlan->user_id)
-                            ->where('type', 'InDirect 1 business award')
-                            ->where('amount', $inDirectAward->award)
-                            ->where('reference', $inDirectAward->name)
-                            ->get();
+            //         // InDirect Business Award Start for all Slabs
+            //         $inDirectAwards = inDirectAward::get();
+            //         foreach ($inDirectAwards as $inDirectAward) {
+            //             // checking if already inserted
+            //             $transaction = Transaction::where('user_id', $userPlan->user_id)
+            //                 ->where('type', 'InDirect 1 business award')
+            //                 ->where('amount', $inDirectAward->award)
+            //                 ->where('reference', $inDirectAward->name)
+            //                 ->get();
 
-                        if ($transaction->count() > 0) {
-                            Log::info('Skip skipAwardInDirect');
-                            goto skipThisLoopInDirectAward;
-                        }
+            //             if ($transaction->count() > 0) {
+            //                 Log::info('Skip skipAwardInDirect');
+            //                 goto skipThisLoopInDirectAward;
+            //             }
 
-                        Log::info('in direct award slab row' . $awardSlabRow->award);
-                        $security = myPlanCount($userPlan->user_id) * 7;
-                        if (networkCap($userPlan->user_id) >= $security) {
-                            Log::info('networkCap Reached, Skipping this Complete loop');
-                            goto endThisLoopInDirectAward;
-                        }
+            //             Log::info('in direct award slab row' . $awardSlabRow->award);
+            //             $security = myPlanCount($userPlan->user_id) * 7;
+            //             if (networkCap($userPlan->user_id) >= $security) {
+            //                 Log::info('networkCap Reached, Skipping this Complete loop');
+            //                 goto endThisLoopInDirectAward;
+            //             }
 
-                        $transaction = new Transaction();
-                        $transaction->user_id = $userPlan->user_id;
-                        $transaction->type =  'InDirect 1 business award';
-                        $transaction->amount =  $inDirectAward->award;
-                        $transaction->status =  'approved';
-                        $transaction->sum =  'in';
-                        $transaction->reference =  $inDirectAward->name;
-                        $transaction->save();
-                        skipThisLoopInDirectAward:
-                        if ($inDirectAward->name == $awardSlab) {
-                            goto endThisLoopInDirectAward;
-                        }
-                    }
-                    endThisLoopInDirectAward:
-                }
-            } else {
-                Log::info('No InDirect Business');
-            }
+            //             $transaction = new Transaction();
+            //             $transaction->user_id = $userPlan->user_id;
+            //             $transaction->type =  'InDirect 1 business award';
+            //             $transaction->amount =  $inDirectAward->award;
+            //             $transaction->status =  'approved';
+            //             $transaction->sum =  'in';
+            //             $transaction->reference =  $inDirectAward->name;
+            //             $transaction->save();
+            //             skipThisLoopInDirectAward:
+            //             if ($inDirectAward->name == $awardSlab) {
+            //                 goto endThisLoopInDirectAward;
+            //             }
+            //         }
+            //         endThisLoopInDirectAward:
+            //     }
+            // } else {
+            //     Log::info('No InDirect Business');
+            // }
 
 
 
