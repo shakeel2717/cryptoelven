@@ -125,7 +125,7 @@
                     <ul>
                         <li>
                             <a href="#" class="text-white ">
-                                <img class="rounded-square" width="150" src="{{ asset('assets/profile/default.png') }}"
+                                <img class="rounded-square" width="80" src="{{ asset('assets/profile/default.png') }}"
                                     alt="User Avatar">
                                 <br>
                                 {{ $user->username }}

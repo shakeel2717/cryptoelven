@@ -6,7 +6,7 @@ $refers = DB::table('users')
 @foreach ($refers as $refer)
     <li>
         <a href="{{ route('user.team.index', ['id' => $refer->id]) }}" class="text-white"><img
-                class="img-avatar" width="120" src="{{ asset('assets/profile/' . $refer->profile) }}" alt="User Avatar">
+                class="img-avatar" width="80" src="{{ asset('assets/profile/default.png') }}" alt="User Avatar">
             <br>
             {{ $refer->username }} <br>
             $ {{ number_format(myPlanCount($refer->id), 2) }} <br>
