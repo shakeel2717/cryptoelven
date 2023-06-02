@@ -97,7 +97,7 @@
             <div class="card-body">
                 <h5 class="card-title">5x Network Cap</h5>
                 <h3 class="text-uppercase ">
-                    {{ number_format(myPlanCount(auth()->user()->id), 2) }}
+                    Total Investment: {{ number_format(myPlanCount(auth()->user()->id), 2) }}
                 </h3>
                 <hr>
                 <canvas id="chart" progress="{{ networkCapProgress(auth()->user()->id) }}"></canvas>
