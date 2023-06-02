@@ -924,7 +924,7 @@ function userWillGetRoi($user_id)
     foreach ($userPlans as $plan) {
         $duration = $plan->plan->duration;
         $profit = $plan->plan->profit;
-        $amount = $profit * $duration;
+        $amount += $profit * $duration;
     }
     return $amount - userGotRoi($user_id);
 }
