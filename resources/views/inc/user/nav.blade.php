@@ -30,7 +30,7 @@
         <li class="nav-item">
             <a href="{{ route('user.roi.withdraw.roiWithdraw') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Profit Withdraw</span>
+                <span class="link-title">ROI Withdraw</span>
             </a>
         </li>
         <li class="nav-item nav-category">Ranks Detail</li>

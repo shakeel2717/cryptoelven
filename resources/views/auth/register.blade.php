@@ -23,7 +23,12 @@
         <label for="password_confirmation">Password</label>
         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" autocomplete="current-password" placeholder="Password">
     </div>
-    <input type="hidden" name="refer" id="refer" value="{{ $refer }}">
+    @if($refer != "default")
+    <div class="form-group">
+        <label for="refer">Sponser</label>
+        <input type="text" class="form-control" id="refer" name="refer" value="{{ $refer }}">
+    </div>
+   @endif
     <div class="form-check form-check-flat form-check-primary">
         <label class="form-check-label">
             <input type="checkbox" class="form-check-input" required>
