@@ -10,7 +10,7 @@
                         <form action="{{ route('user.roi.withdraw.roiWithdrawStore') }}" method="POST">
                             @csrf
                             <h2 class="content-heading pt-0">
-                                <i class="fa fa-fw fa-user-circle text-muted me-1"></i> Withdraw Request, Current Profit Balance is:
+                                <i class="fa fa-fw fa-user-circle text-muted me-1"></i> Withdraw Request, Current roiStoppedInvest Balance is:
                                 ${{ number_format(roiBalance(auth()->user()->id), 5) }}
                             </h2>
                             <div class="row push">
@@ -36,6 +36,7 @@
                                     <div class="mb-4">
                                         <label class="form-label" for="amount">Amount</label>
                                         <input type="text" name="amount" id="amount" placeholder="Amount" class="form-control">
+                                        <small>Min Withdraw $20</small>
                                     </div>
                                 </div>
                             </div>
