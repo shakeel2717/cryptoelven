@@ -237,7 +237,7 @@
                                 <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Daily Profit ${{ $plan->profit }}</p>
                                 <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Instant Deposit</p>
                                 <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Instant Withdrawal</p>
-                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Min Withdrawl 30$</p>
+                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Min Withdrawl 20$</p>
                                 <h3 class="my-4 text-successs">Only ${{ number_format($plan->price,0) }} Now</h3>
                                 <a href="{{ route('register') }}" target="_blank" class="btn btn-primary btn-sms rounded-pilll px-3"><span class="feather icon-shopping-cart me-1"></span> Purchase Now</a>
                             </div>
