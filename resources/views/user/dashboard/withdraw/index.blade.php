@@ -35,6 +35,7 @@
                                     <div class="mb-4">
                                         <label class="form-label" for="amount">Amount</label>
                                         <input type="text" name="amount" id="amount" placeholder="Amount" class="form-control">
+                                        <small>Min Withdraw $20</small>
                                     </div>
                                 </div>
                             </div>
