@@ -37,7 +37,7 @@
         <li class="nav-item">
             <a href="{{ route('user.statement.ranks') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Ransk & Reward</span>
+                <span class="link-title">Ranks & Reward</span>
             </a>
         </li>
         <li class="nav-item nav-category">Affiliate Detail</li>
@@ -128,12 +128,6 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('user.statement.withdrawals') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All Withdawals</span>
-            </a>
-        </li>
-        <li class="nav-item">
             <a href="{{ route('user.statement.roi') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
                 <span class="link-title">ROI Profit</span>
@@ -149,6 +143,12 @@
             <a href="{{ route('user.statement.direct') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
                 <span class="link-title">Direct Bonus</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('user.statement.withdrawals') }}" class="nav-link">
+                <i class="link-icon" data-feather="box"></i>
+                <span class="link-title">All Withdawals</span>
             </a>
         </li>
         <li class="nav-item">

@@ -143,7 +143,7 @@
         <li class="nav-item">
             <a href="{{ route('admin.history.networkcap') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">All 7x Cap</span>
+                <span class="link-title">All 5x Cap</span>
             </a>
         </li>
         <li class="nav-item">

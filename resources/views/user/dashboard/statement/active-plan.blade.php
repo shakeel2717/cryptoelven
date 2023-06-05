@@ -15,7 +15,6 @@
                                     <th>Plan Price</th>
                                     <th>Status</th>
                                     <th>Date</th>
-                                    <th>Capital Refund</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,10 +27,6 @@
                                         </td>
                                         <td class="text-center text-capitalize">{{ $transaction->status }}</td>
                                         <td class="text-center text-capitalize">{{ $transaction->created_at }}</td>
-                                        <td>
-                                            <a href="{{ route('user.plan.active.refund', ['id' => $transaction->id]) }}"
-                                                class="btn btn-primary btn-md active">Refund</a>
-                                        </td>
                                     </tr>
                                 @empty
                                     <p>No Record Found</p>

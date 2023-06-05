@@ -9,9 +9,6 @@
         <div class="col-md-4 grid-margin stretch-card">
             @include('inc.card',['title' => 'All Income','value' => number_format(inBalance(auth()->user()->id), 2)])
         </div>
-        <div class="col-md-4 grid-margin stretch-card">
-            @include('inc.card',['title' => 'All Withdraw','value' => number_format(withdraw(auth()->user()->id), 2)])
-        </div>
     </div>
 </div>
 <div class="row">
@@ -32,7 +29,7 @@
             @include('inc.card',['title' => 'Ransk & Reward','value' => number_format(passive(auth()->user()->id), 2) ])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
-            @include('inc.card',['title' => 'Global Share','value' => number_format(userGotRoi(auth()->user()->id), 2) ])
+            @include('inc.card',['title' => 'Global Share','value' => number_format(0, 2) ])
         </div>
         <div class="col-md-3 grid-margin stretch-card">
             @include('inc.card',['title' => 'Remianing ROI','value' => number_format(userWillGetRoi(auth()->user()->id), 2) ])

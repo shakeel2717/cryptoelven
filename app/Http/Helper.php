@@ -913,7 +913,7 @@ function todayPaidRoi()
 
 function userGotRoi($user_id)
 {
-    $in = RoiTransaction::where('sum', 'in')->where('user_id', $user_id)->whereDate('created_at', Carbon::today())->sum('amount');
+    $in = RoiTransaction::where('sum', 'in')->where('user_id', $user_id)->sum('amount');
     return $in;
 }
 
