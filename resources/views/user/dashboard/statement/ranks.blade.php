@@ -23,8 +23,8 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td class="text-uppercase">{{ $rank->name }}</td>
-                                        <td>{{ $rank->business_from }}</td>
-                                        <td>{{ $rank->award }}</td>
+                                        <td>${{ $rank->business_from }}</td>
+                                        <td>${{ $rank->award }}</td>
                                         <td>{{ $rank->global }}%</td>
                                         <td class="text-center">
                                             @if ($rank->business_from <= directBusiness(auth()->user()->id))
