@@ -28,9 +28,8 @@
                                         <td>{{ $rank->global }}%</td>
                                         <td class="text-center">
                                             @if ($rank->business_from <= directBusiness(auth()->user()->id))
-                                                <img src="{{ asset('assets/ranks/' . $loop->iteration . '.png') }}"
-                                                    width="50" alt="">
-                                            @endif
+                                            <i data-feather="check"></i>
+                                            @endif 
                                         </td>
                                     </tr>
                                 @empty
