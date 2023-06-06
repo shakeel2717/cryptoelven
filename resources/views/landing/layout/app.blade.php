@@ -337,9 +337,9 @@
 
         <section class="request-feature py-5">
             <div class="container">
-                <h2 class="mb-3">Start Today and Earn Money with US</h2>
+                <h2 class="mb-3">Download PDF for All the Detail</h2>
                 <p class="mb-3 text-muteds">Trust our history of delivering consistent and impressive investment returns.</p>
-                <a href="{{ route('register') }}" target="_blank" class="btn btn-primary btn-sm">Create Account Today <span class="feather icon-arrow-right"></span></a>
+                <a href="{{ asset('assets/cryptoelevn.pdf') }}" target="_blank" class="btn btn-primary btn-sm">Download now <span class="feather icon-arrow-right"></span></a>
             </div>
         </section>
 
