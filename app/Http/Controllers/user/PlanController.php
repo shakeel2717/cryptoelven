@@ -52,7 +52,7 @@ class PlanController extends Controller
         }
 
         if ($information['error'] != 'ok') {
-            return "Please send USDT TRC20 to this address(TD3JBrzzjJPANa3fDtacJ8wophuLaZtehR), and take a screenshot of your payment. After successful payment, don't forget to send the payment proof or transaction id for instant Deposit. Our WhatsApp Number: (+971561559810)";
+            return "Please send USDT TRC20 to this address(TMWT4WwTmvMe3VghDGZQ3fshcGARidpTsU), and take a screenshot of your payment. After successful payment, don't forget to send the payment proof or transaction id for instant Deposit. Our WhatsApp Number: (+971504415461)";
         }
 
         // Inserting New Transaction Request Storing into session
