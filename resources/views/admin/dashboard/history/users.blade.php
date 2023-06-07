@@ -32,8 +32,8 @@
                                 <!-- <th>Network</th> -->
                                 <!-- <th>Verify</th> -->
                                 <!-- <th>Action</th> -->
-                                <!-- <th>ROI</th> -->
-                                <!-- <th>Sell Stop</th> -->
+                                <th>ROI</th>
+                                <th>Sell Stop</th>
                                 <!-- <th>Passive</th> -->
                                 <th>Login</th>
                                 <!-- <th>Winner</th>
@@ -57,6 +57,22 @@
                                 <td class="text-center text-capitalize"><a href="{{ route('admin.history.user.suspend', ['user' => $user->id,'action' => 0]) }}" class="btn btn-primary btn-sm">ReActive</a></td>
                                 @else
                                 <td class="text-center text-capitalize"><a href="{{ route('admin.history.user.suspend', ['user' => $user->id, 'action' => 1]) }}" class="btn btn-primary btn-sm">Suspend</a></td>
+                                @endif
+                                @if ($user->roi == 1)
+                                <td class="text-center"><a class="btn btn-danger btn-sm" href="{{ route('admin.history.users.stop.ROi', ['user' => $user->id]) }}">Stop</a>
+                                </td>
+                                @elseif ($user->roi == 0)
+                                <td class="text-center"><a class="btn btn-success btn-sm" href="{{ route('admin.history.users.start.ROi', ['user' => $user->id]) }}">Start</a>
+                                </td>
+                                @endif
+                                @if ($user->sale == 1)
+                                <td class="text-center"><a class="btn btn-danger btn-sm" href="{{ route('admin.history.user.sale.stop', ['id' => $user->id]) }}">Sale
+                                        Stop</a>
+                                </td>
+                                @else
+                                <td class="text-center"><a class="btn btn-success btn-sm" href="{{ route('admin.history.user.sale.start', ['id' => $user->id]) }}">Start
+                                        Sale</a>
+                                </td>
                                 @endif
                                 <td>
                                     <form action="{{ route('admin.login.user') }}" method="POST">
