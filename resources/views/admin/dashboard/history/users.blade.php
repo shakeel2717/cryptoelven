@@ -25,11 +25,9 @@
                                     <th>Plans</th>
                                     <th>Upliner</th>
                                     <th>Status</th>
-                                    <th>Network</th>
-                                    <th>Verify</th> -->
+                                    <th>PIN</th>
                                     <th>Action</th>
                                     <th>ROI</th>
-                                    
                                     <th>Login</th>
                                     <th>Winner</th>
                             </tr>
@@ -49,12 +47,6 @@
                                         <td class="text-center text-capitalize">{{ $user->status }}</td>
                                         <td class="text-center text-capitalize">{{ $user->network == 1 ? 'Yes' : 'No' }}
                                         </td>
-                                        @if ($user->email_verified_at == null)
-                                            <td><a href="{{ route('admin.user.verified', ['id' => $user->id]) }}"
-                                                    class="btn btn-dark">Verify</a></td>
-                                        @else
-                                            <td>Verified</td>
-                                        @endif
                                         <td class="text-center text-capitalize">
                                             @if ($user->network == 1)
                                                 <a href="{{ route('admin.history.user.plan.unPin', ['id' => $user->id]) }}"
@@ -92,12 +84,6 @@
                             @endforelse
                         </tbody>
                     </table>
-                </div>
-                <div class="card-arrow">
-                    <div class="card-arrow-top-left"></div>
-                    <div class="card-arrow-top-right"></div>
-                    <div class="card-arrow-bottom-left"></div>
-                    <div class="card-arrow-bottom-right"></div>
                 </div>
             </div>
         </div>
