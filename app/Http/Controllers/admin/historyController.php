@@ -26,9 +26,7 @@ class historyController extends Controller
 
     public function users()
     {
-        $users = cache()->remember('users', 60 * 30, function () {
-            return User::get()->lazy();
-        });
+        $users =  User::get()->lazy();
 
         return view('admin.dashboard.history.users', compact('users'));
     }
