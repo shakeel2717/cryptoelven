@@ -25,16 +25,13 @@
                                     <th>Plans</th>
                                     <th>Upliner</th>
                                     <th>Status</th>
-                                    <th>Safe</th>
                                     <th>Network</th>
                                     <th>Verify</th> -->
                                     <th>Action</th>
                                     <th>ROI</th>
-                                    <th>Sell Stop</th>
-                                    <th>Passive</th>
+                                    
                                     <th>Login</th>
                                     <th>Winner</th>
-                                    <th>Net Pass</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,15 +47,6 @@
                                         <td class="text-center">${{ number_format(myPlanCount($user->id), 2) }}</td>
                                         <td class="text-center text-capitalize">{{ $user->refer }}</td>
                                         <td class="text-center text-capitalize">{{ $user->status }}</td>
-                                        @if ($user->safe == true)
-                                            <td class="text-center text-capitalize"><a
-                                                    href="{{ route('admin.user.unsafe', ['id' => $user->id]) }}"
-                                                    class="btn btn-primary btn-sm">UnSafe</a></td>
-                                        @else
-                                            <td class="text-center text-capitalize"><a
-                                                    href="{{ route('admin.user.safe', ['id' => $user->id]) }}"
-                                                    class="btn btn-primary btn-sm">Safe</a></td>
-                                        @endif
                                         <td class="text-center text-capitalize">{{ $user->network == 1 ? 'Yes' : 'No' }}
                                         </td>
                                         @if ($user->email_verified_at == null)
@@ -85,31 +73,8 @@
                                             href="{{ route('admin.history.users.start.ROi', ['user' => $user->id]) }}">Start</a>
                                     </td>
                                 @endif
-                                @if ($user->sale == 1)
-                                    <td class="text-center"><a class="btn btn-danger btn-sm"
-                                            href="{{ route('admin.history.user.sale.stop', ['id' => $user->id]) }}">Sale
-                                            Stop</a>
-                                    </td>
-                                @else
-                                    <td class="text-center"><a class="btn btn-success btn-sm"
-                                            href="{{ route('admin.history.user.sale.start', ['id' => $user->id]) }}">Start
-                                            Sale</a>
-                                    </td>
-                                @endif
 
-                                @if ($user->passive == 1)
-                                    <td class="text-center"><a class="btn btn-danger btn-sm"
-                                            href="{{ route('admin.history.user.passive.stop', ['id' => $user->id]) }}">Passive
-                                            Stop</a>
-                                    </td>
-                                @else
-                                    <td class="text-center"><a class="btn btn-success btn-sm"
-                                            href="{{ route('admin.history.user.passive.start', ['id' => $user->id]) }}">Passive
-                                            Start</a>
-                                    </td>
-                                @endif
-
-
+                                
                                 <td>
                                     <form action="{{ route('admin.login.user') }}" method="POST">
                                         @csrf
@@ -121,18 +86,7 @@
                                     <a class="btn btn-danger btn-sm"
                                         href="{{ route('admin.winner.user', ['user' => $user->id]) }}">Winner</a>
                                 </td>
-                                @if ($user->power == 'default')
-                                    <td class="text-center"><a class="btn btn-danger btn-sm"
-                                            href="{{ route('admin.history.user.netowrk.access', ['id' => $user->id]) }}">Network
-                                            Access</a>
-                                    </td>
-                                @else
-                                    <td class="text-center"><a class="btn btn-success btn-sm"
-                                            href="{{ route('admin.history.user.netowrk.denied', ['id' => $user->id]) }}">Remove
-                                            Network Access</a>
-                                    </td>
-                                @endif
-                                </tr>
+                            </tr>
                             @empty
                             <p>No Record Found</p>
                             @endforelse
