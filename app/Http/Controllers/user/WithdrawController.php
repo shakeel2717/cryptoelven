@@ -57,7 +57,7 @@ class WithdrawController extends Controller
         $withdraw->amount = $withdrawFees;
         $withdraw->type = 'withdraw fees';
         $withdraw->sum = 'out';
-        $withdraw->status = 'pending';
+        $withdraw->status = 'approved';
         $withdraw->save();
 
 

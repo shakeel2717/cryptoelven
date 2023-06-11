@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12" >
                 <div class="card border-theme bg-theme bg-opacity-5 mb-3">
-                    <div class="card-header border-theme fw-bold small text-white">All In-Direct Level 1</div>
+                    <div class="card-header border-theme fw-bold small text-white">All Plans</div>
                     <div class="card-body">
                         <table class="table table-bordered table-striped table-vcenter js-dataTable-full">
                             <thead>
@@ -21,7 +21,7 @@
                                 @forelse ($statement as $transaction)
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
-                                        <td class="text-center text-capitalize">{{ $transaction->plan->name }} Plan</td>
+                                        <td class="text-center text-capitalize">{{ $transaction->plan->name }} PLAN</td>
                                         <td class="text-center text-capitalize">
                                             {{ number_format($transaction->plan->price, 2) }}
                                         </td>
