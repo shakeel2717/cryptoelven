@@ -16,13 +16,13 @@
                         <div class="card">
                             <div class="card-body text-left">
                                 <div class="qr-image text-center">
-                                    <img src="{{ $task->qrcode_url }}" alt="" width="50%">
+                                    <img src="{{ $task->qrcode_url }}" alt="" width="100">
                                     <hr>
-                                    <h4 class="text-theme">
+                                    <h4 class="text-theme text-center">
                                         <b>Amount:</b> <span class="amount">{{ $task->amount }}</span>
                                         {{ $task->to_currency }}
                                     </h4>
-                                    <p>
+                                    <p class="text-center">
                                         <b>Payment ID:</b> <span class="amount">{{ $task->txn_id }}</span>
                                     </p>
                                     <div class="row">
