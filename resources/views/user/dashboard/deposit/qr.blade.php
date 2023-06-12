@@ -37,9 +37,9 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <p>
+                                <!-- <p>
                                     Status: <a href="{{ $task->status_url }}">Click here</a> to Check Payment Status.
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </div>
