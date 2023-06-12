@@ -21,7 +21,6 @@ class AdminAuthenticated
         if (Auth::user()->role != 'admin') {
             return redirect()->route('login');
         }
-        sleep(10);
         return $next($request);
     }
 }
