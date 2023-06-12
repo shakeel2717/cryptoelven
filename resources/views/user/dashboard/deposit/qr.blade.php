@@ -16,7 +16,7 @@
                         <div class="card">
                             <div class="card-body text-left">
                                 <div class="qr-image text-center">
-                                    <img src="{{ $task->qrcode_url }}" alt="" width="100">
+                                    <img src="{{ $task->qrcode_url }}" alt="" width="250">
                                     <hr>
                                     <h4 class="text-theme text-center">
                                         <b>Amount:</b> <span class="amount">{{ $task->amount }}</span>
