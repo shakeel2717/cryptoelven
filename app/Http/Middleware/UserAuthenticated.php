@@ -33,7 +33,6 @@ class UserAuthenticated
             $request->session()->regenerateToken();
             return redirect()->route('login')->withErrors('Your Account is Suspended!, Please Contact Support!');
         } else {
-            sleep(10);
             return $next($request);
         }
     }
