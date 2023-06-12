@@ -6,22 +6,22 @@
 @section('content')
     <div class="content">
         <div class="content content-full text-center">
-            <h1 class="h1 mt-3">
+            <h4 class="mt-3">
                 Deposit {{ $task->to_currency }} Balance in to your account
-            </h1>
+            </h4>
             <br>
             <div>
                 <div class="row">
                     <div class="col-md-10 mx-auto">
                         <div class="card">
                             <div class="card-body text-left">
-                                <div class="qr-image">
+                                <div class="qr-image text-center">
                                     <img src="{{ $task->qrcode_url }}" alt="" width="50%">
                                     <hr>
-                                    <h2 class="text-theme">
+                                    <h4 class="text-theme">
                                         <b>Amount:</b> <span class="amount">{{ $task->amount }}</span>
                                         {{ $task->to_currency }}
-                                    </h2>
+                                    </h4>
                                     <p>
                                         <b>Payment ID:</b> <span class="amount">{{ $task->txn_id }}</span>
                                     </p>
