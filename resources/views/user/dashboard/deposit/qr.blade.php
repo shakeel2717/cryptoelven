@@ -12,7 +12,7 @@
             <br>
             <div>
                 <div class="row">
-                    <div class="col-md-4 mx-auto">
+                    <div class="col-md-10 mx-auto">
                         <div class="card">
                             <div class="card-body text-left">
                                 <div class="qr-image">
