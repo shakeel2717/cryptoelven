@@ -143,12 +143,19 @@ class historyController extends Controller
     {
         $Withdraw = Withdraw::findOrFail($id);
         $Withdraw->status = 'approved';
-        $Withdraw->save();
+
+        $withdrawAmount = $Withdraw->amount;
+        $withdrawFees = ($withdrawAmount / (1 - (3 / 100))) - $withdrawAmount;
 
         // finding this tid
-        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw')->where('amount', $Withdraw->amount)->where('status', 'pending')->first();
+        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw')->where('amount', $withdrawAmount)->where('status', 'pending')->first();
         $transaction->status = 'approved';
         $transaction->save();
+
+        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw fees')->where('amount', $withdrawFees)->where('status', 'pending')->first();
+        $transaction->status = 'approved';
+        $transaction->save();
+        $Withdraw->save();
 
         $amount = $Withdraw->amount;
         $method = $Withdraw->method;
@@ -228,12 +235,19 @@ class historyController extends Controller
     {
         $Withdraw = ProfitWithdraw::findOrFail($id);
         $Withdraw->status = 'approved';
-        $Withdraw->save();
+
+        $withdrawFees = $Withdraw->amount * 3 / 100;
+        $withdrawAmount = $Withdraw->amount - $withdrawFees;
 
         // finding this tid
-        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'self withdraw')->where('amount', $Withdraw->amount)->where('status', 'pending')->first();
+        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'self withdraw')->where('amount', $withdrawAmount)->where('status', 'pending')->first();
         $transaction->status = 'approved';
         $transaction->save();
+
+        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'withdraw fees')->where('amount', $withdrawFees)->where('status', 'pending')->first();
+        $transaction->status = 'approved';
+        $transaction->save();
+        $Withdraw->save();
 
         $amount = $Withdraw->amount;
         $method = $Withdraw->method;
@@ -251,11 +265,18 @@ class historyController extends Controller
     public function withdrawalsReject($id)
     {
         $Withdraw = Withdraw::findOrFail($id);
-        $Withdraw->delete();
+
+        $withdrawAmount = $Withdraw->amount;
+        $withdrawFees = ($withdrawAmount / (1 - (3 / 100))) - $withdrawAmount;
+
 
         // finding this tid
-        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw')->where('amount', $Withdraw->amount)->where('status', 'pending')->first();
+        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw')->where('amount', $withdrawAmount)->where('status', 'pending')->first();
         $transaction->delete();
+
+        $transaction = Transaction::where('user_id', $Withdraw->user_id)->where('type', 'withdraw fees')->where('amount', $withdrawFees)->where('status', 'pending')->first();
+        $transaction->delete();
+        $Withdraw->delete();
         return redirect()->back()->with('message', 'This User Transaction Deleted Successfully');
     }
 
@@ -263,11 +284,17 @@ class historyController extends Controller
     public function withdrawalsProfitReject($id)
     {
         $Withdraw = ProfitWithdraw::findOrFail($id);
-        $Withdraw->delete();
+        $withdrawFees = $Withdraw->amount * 3 / 100;
+        $withdrawAmount = $Withdraw->amount - $withdrawFees;
 
         // finding this tid
-        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'self withdraw')->where('amount', $Withdraw->amount)->where('status', 'pending')->first();
+        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'self withdraw')->where('amount', $withdrawAmount)->where('status', 'pending')->first();
         $transaction->delete();
+
+        $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'withdraw fees')->where('amount', $withdrawFees)->where('status', 'pending')->first();
+        $transaction->delete();
+        $Withdraw->delete();
+
         return redirect()->back()->with('message', 'This User Transaction Deleted Successfully');
     }
 
