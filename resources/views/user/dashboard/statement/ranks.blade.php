@@ -11,6 +11,7 @@
                             <thead>
                                 <tr>
                                     <th class="text-center" style="width: 80px;">#</th>
+                                    <th>Reward</th>
                                     <th>Rank Name</th>
                                     <th>Direct Sale Required</th>
                                     <th>Award</th>
@@ -22,14 +23,17 @@
                                 @forelse ($ranks as $rank)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
+                                        <td><img src="{{ asset('assets/reward/') }}/{{ $loop->iteration }}.svg" alt="Reward"></td>
                                         <td class="text-uppercase">{{ $rank->name }}</td>
                                         <td>${{ $rank->business_from }}</td>
                                         <td>${{ $rank->award }}</td>
                                         <td>{{ $rank->global }}%</td>
                                         <td class="text-center">
                                             @if ($rank->business_from <= directBusiness(auth()->user()->id))
-                                            <i data-feather="check"></i>
-                                            @endif 
+                                            <i data-feather="check-square"></i>
+                                            @else
+                                            <i data-feather="x-square"></i>
+                                            @endif
                                         </td>
                                     </tr>
                                 @empty
