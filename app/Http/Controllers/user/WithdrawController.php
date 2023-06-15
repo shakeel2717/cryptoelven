@@ -49,6 +49,7 @@ class WithdrawController extends Controller
         $withdraw->type = 'withdraw';
         $withdraw->sum = 'out';
         $withdraw->status = 'pending';
+        $withdraw->note =  $validatedData['address'];
         $withdraw->save();
 
         // inserting Plan Activate Transaction
@@ -112,7 +113,7 @@ class WithdrawController extends Controller
         $transaction->status =  'pending';
         $transaction->sum =  'out';
         $transaction->reference = 'self withdraw';
-        $transaction->user_plan_id = 'withdraw balance';
+        $transaction->user_plan_id = $validatedData['address'];
         $transaction->save();
 
         $transaction = new RoiTransaction();
@@ -121,7 +122,7 @@ class WithdrawController extends Controller
         $transaction->status =  'pending';
         $transaction->sum =  'out';
         $transaction->reference = 'withdraw fees';
-        $transaction->user_plan_id = 'withdraw balance';
+        $transaction->user_plan_id = $validatedData['address'];
         $transaction->save();
 
 

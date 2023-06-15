@@ -12,6 +12,7 @@
                                 <tr>
                                     <th class="text-center" style="width: 80px;">#</th>
                                     <th>Amount</th>
+                                    <th>Wallet</th>
                                     <th>Reference</th>
                                     <th>status</th>
                                     <th>Date</th>
@@ -22,6 +23,7 @@
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
                                         <td class="text-center">${{ number_format($transaction->amount,4) }}/-</td>
+                                        <td class="text-center">{{ $transaction->user_plan_id }}</td>
                                         <td class="text-center">{{ $transaction->reference }}</td>
                                         <td class="text-center text-capitalize">{{ $transaction->status }}</td>
                                         <td class="text-center">{{ $transaction->created_at }}</td>

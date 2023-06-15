@@ -9,6 +9,9 @@
         <div class="col-md-4 grid-margin stretch-card">
             @include('inc.card',['title' => 'All Income','value' => number_format(inBalance(auth()->user()->id), 2)])
         </div>
+        <div class="col-md-4 grid-margin stretch-card">
+            @include('inc.card',['title' => 'All Withdrawal','value' => number_format(withdraw(auth()->user()->id), 2)])
+        </div>
     </div>
 </div>
 <div class="row">
