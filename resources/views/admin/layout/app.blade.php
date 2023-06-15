@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="/assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="/assets/css/demo_2/style.css">
     <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <style>
+        .card {
+            overflow: scroll;
+        }
+    </style>
 </head>
 
 <body>

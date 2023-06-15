@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="/assets/vendors/core/core.css">
     <link rel="stylesheet" href="/assets/fonts/feather-font/css/iconfont.css">
     <link rel="stylesheet" href="/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
     <link rel="stylesheet" href="/assets/css/demo_2/style.css">
     <link rel="shortcut icon" href="/assets/images/favicon.png" />
     <style>
-        .card{
+        .card {
             overflow: scroll;
         }
     </style>
@@ -118,7 +119,7 @@
                 </div>
 
                 @yield('content')
-                
+
                 <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
                     <p class="text-muted text-center text-md-left">Copyright © {{ date('Y') }} {{ env('APP_NAME') }}. All rights reserved</p>
                     <p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i> by <a href="https://asanwebs.com/">ASAN WEBS</a> </p>
@@ -132,6 +133,8 @@
         <script src="/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
         <script src="/assets/vendors/apexcharts/apexcharts.min.js"></script>
         <script src="/assets/vendors/progressbar.js/progressbar.min.js"></script>
+        <script src="/assets/vendors/datatables.net/jquery.dataTables.js"></script>
+        <script src="/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
         <script src="/assets/vendors/feather-icons/feather.min.js"></script>
         <script src="/assets/js/template.js"></script>
         <script src="/assets/js/dashboard.js"></script>

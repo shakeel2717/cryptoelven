@@ -7,7 +7,7 @@
                 <div class="card border-theme bg-theme bg-opacity-5 mb-3">
                     <div class="card-header border-theme fw-bold small text-white">HEADER</div>
                     <div class="card-body">
-                        <table class="table table-bordered table-striped table-vcenter">
+                        <table class="table table-bordered table-striped table-vcenter" id="dataTableExample">
                             <thead>
                                 <tr>
                                     <th class="text-center" style="width: 80px;">#</th>
@@ -42,12 +42,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

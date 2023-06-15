@@ -21,12 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -44,12 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -67,12 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -90,12 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -113,12 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -136,12 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -160,12 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -184,12 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -209,12 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -234,12 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -258,12 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -282,12 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -306,12 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -331,12 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -356,12 +286,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -381,12 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -405,12 +325,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -429,12 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -453,12 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -478,12 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -502,12 +402,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -526,12 +421,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -550,12 +440,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -574,12 +459,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -598,12 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -622,12 +497,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6">
@@ -647,12 +517,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
