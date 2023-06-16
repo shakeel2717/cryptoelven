@@ -101,7 +101,7 @@ class WithdrawController extends Controller
 
         $ProfitWithdraw = new ProfitWithdraw();
         $ProfitWithdraw->user_id = auth()->user()->id;
-        $ProfitWithdraw->amount = $validatedData['amount'];
+        $ProfitWithdraw->amount = $amount;
         $ProfitWithdraw->method = $validatedData['method'];
         $ProfitWithdraw->address = $validatedData['address'];
         $ProfitWithdraw->status = 'pending';
