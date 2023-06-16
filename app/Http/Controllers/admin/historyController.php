@@ -284,8 +284,9 @@ class historyController extends Controller
     public function withdrawalsProfitReject($id)
     {
         $Withdraw = ProfitWithdraw::findOrFail($id);
-        $withdrawFees = $Withdraw->amount * 3 / 100;
-        $withdrawAmount = $Withdraw->amount - $withdrawFees;
+
+        $withdrawAmount = $Withdraw->amount;
+        $withdrawFees = ($withdrawAmount / (1 - (3 / 100))) - $withdrawAmount;
 
         // finding this tid
         $transaction = RoiTransaction::where('user_id', $Withdraw->user_id)->where('reference', 'self withdraw')->where('amount', $withdrawAmount)->where('status', 'pending')->first();
