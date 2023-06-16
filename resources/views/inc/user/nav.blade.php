@@ -87,13 +87,16 @@
                         <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 7 Commission</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 8 Commission</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 9 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 10 Commission</a>
                     </li>
                 </ul>
             </div>
