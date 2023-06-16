@@ -34,7 +34,7 @@ class StatementController extends Controller
 
     public function roiWithdrawals()
     {
-        $statement = RoiTransaction::where('user_id', auth()->user()->id)->where('sum', 'out')->get();
+        $statement = RoiTransaction::where('user_id', auth()->user()->id)->where('reference', 'self withdraw')->get();
         return view('user.dashboard.statement.roiWithdrawals', compact('statement'));
     }
 
