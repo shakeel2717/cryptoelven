@@ -1,3 +1,9 @@
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById("forms");
+        dropdown.classList.toggle("show");
+    }
+</script>
 <div class="sidebar-body">
     <ul class="nav">
         <li class="nav-item nav-category">Main</li>
@@ -47,72 +53,50 @@
                 <span class="link-title">My Team</span>
             </a>
         </li>
+        <li class="nav-item nav-category">Uni-Level Bonus</li>
         <li class="nav-item">
             <a href="{{ route('user.statement.direct.team') }}" class="nav-link">
                 <i class="link-icon" data-feather="box"></i>
                 <span class="link-title">Direct Refer</span>
             </a>
         </li>
-        <li class="nav-item nav-category">Uni-Level Bonus</li>
         <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level1') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 1 Commission</span>
+            <a class="nav-link" data-bs-toggle="collapse" href="javascript:void(0);" role="button" aria-expanded="false" aria-controls="forms" onclick="toggleDropdown()">
+                <i class="link-icon" data-feather="inbox"></i>
+                <span class="link-title">Level Wise Comm.</span>
+                <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level2') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 2 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level3') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 3 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level4') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 4 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level5') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 5 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 6 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 7 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 8 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 9 Commission</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">
-                <i class="link-icon" data-feather="box"></i>
-                <span class="link-title">Level 10 Commission</span>
-            </a>
+            <div class="collapse" id="forms">
+                <ul class="nav sub-menu">
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level1') }}" class="nav-link">Level 1 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level2') }}" class="nav-link">Level 2 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level3') }}" class="nav-link">Level 3 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level4') }}" class="nav-link">Level 4 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level5') }}" class="nav-link">Level 5 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('user.statement.indirect.level6') }}" class="nav-link">Level 6 Commission</a>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li class="nav-item nav-category">Account Statement</li>
         <li class="nav-item">
