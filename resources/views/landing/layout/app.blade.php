@@ -69,7 +69,7 @@
                         </div>
                         <h3 class="mb-4">Unlocking the Potential of Trading: Empowering Your Investments</h3>
                         <p class="mb-4 text-muted">Experience the power of our back-end trading operations, driving your investments towards success. Advanced Algorithms for Enhanced Trading Performance</p>
-                        <a class="btn btn-primary rounded-pill px-3 btn-sm me-2" href="{{ route('register') }}">View Demos</a>
+                        <a class="btn btn-primary rounded-pill px-3 btn-sm me-2" href="{{ route('register') }}">Join Free Today</a>
                         <a class="btn btn-outline-primary rounded-pill px-3 btn-sm" href="{{ route('login') }}" target="_blank"><span class="feather icon-shopping-cart me-1"></span> Sign in</a>
                     </div>
                     <div class="col-lg-7">
@@ -216,39 +216,7 @@
             </div>
         </section>
 
-        <section class="licenses">
-            <div class="container">
-                <header class="section-header">
-                    <!-- <small>works</small> -->
-                    <h2>Investment Plans</h2>
-                    <hr>
-                    <p class="lead text-muted">Access to a Network of Professional Traders and Experts</p>
-                </header>
-                <div class="row justify-content-center">
-                    @foreach ($plans as $plan)
-                    <div class="col-md-4 grid-margin">
-                        <div class="card bg-white shadow-none">
-                            <div class="card-body">
-                                <h3 class="mb-3">{{ $plan->name }}</h3>
-                                <hr>
-                                <p class="mb-4">
-                                    Duration: {{ $plan->duration }} Days
-                                </p>
-                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Daily Profit ${{ $plan->profit }}</p>
-                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Instant Deposit</p>
-                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Instant Withdrawal</p>
-                                <p class="mb-2 text-muted tx-14"><span class="feather icon-check text-success me-1"></span>Min Withdrawl 20$</p>
-                                <h3 class="my-4 text-successs">Only ${{ number_format($plan->price,0) }} Now</h3>
-                                <a href="{{ route('register') }}" target="_blank" class="btn btn-primary btn-sms rounded-pilll px-3"><span class="feather icon-shopping-cart me-1"></span> Purchase Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </section>
-
-
+        
         <section class="faq">
             <div class="container">
                 <header class="section-header">
