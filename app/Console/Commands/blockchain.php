@@ -69,10 +69,10 @@ class blockchain extends Command
 
 
             // // checking if this user ROI is Stopped
-            // if ($user->roi == 0) {
-            //     Log::info($user->username.' User ROi is Stoped in Admin');
-            //     goto endThisUser;
-            // }
+            if ($user->roi == 0) {
+                Log::info($user->username . ' User ROi is Stoped in Admin');
+                goto endThisUser;
+            }
 
             // checking if this ROI already Inserted
             $transaction = RoiTransaction::where('user_id', $userPlan->user_id)
@@ -84,6 +84,7 @@ class blockchain extends Command
             // checking all roi transaction who created_at today with carbon
 
             if ($transaction->count() > 0) {
+                Log::info('Today Date: ' . Carbon::today() . 'Delivered Date: ' . $transaction[0]->created_at);
                 Log::info($user->username . ' Already ROI Inserted');
                 goto endThisUser;
             } else {

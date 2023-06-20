@@ -25,13 +25,10 @@ class RedirectIfAuthenticated
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
                 if (Auth::user()->role == 'user') {
-                    Log::info('User Redirect Authenticated: User is authenticated as a user');
                     return redirect()->route('user.dashboard');
                 } elseif (Auth::user()->role == 'seller') {
-                    Log::info('User Redirect Authenticated: seller is authenticated as a seller');
                     return redirect()->route('seller.dashboard');
                 } elseif (Auth::user()->role == 'admin') {
-                    Log::info('User Redirect Authenticated: admin is authenticated as a admin');
                     return redirect()->route('admin.dashboard');
                 }
             }

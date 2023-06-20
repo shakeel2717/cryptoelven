@@ -44,48 +44,24 @@ class Kernel extends ConsoleKernel
         $schedule->command('blockchain:run')
             ->withoutOverlapping()
             ->twiceDaily()
-            ->before(function () {
-                Log::info('blockchain:run command Starting in Scheduler');
-            })
-            ->after(function () {
-                Log::info('blockchain:run command Finished in Scheduler');
-            })
             ->runsInMaintenanceMode();
 
 
         $schedule->command('global:share')
             ->withoutOverlapping()
             ->twiceMonthly()
-            ->before(function () {
-                Log::info('global:share command Starting in Scheduler');
-            })
-            ->after(function () {
-                Log::info('global:share command Finished in Scheduler');
-            })
             ->runsInMaintenanceMode();
 
 
         $schedule->command('queue:work --stop-when-empty')
             ->withoutOverlapping()
             ->everyMinute()
-            ->before(function () {
-                Log::info('queue:work --stop-when-empty command Starting in Scheduler');
-            })
-            ->after(function () {
-                Log::info('queue:work --stop-when-empty command Finished in Scheduler');
-            })
             ->runsInMaintenanceMode();
 
 
         $schedule->command('queue:retry --queue=default')
             ->withoutOverlapping()
             ->everyMinute()
-            ->before(function () {
-                Log::info('queue:retry --queue=default command Starting in Scheduler');
-            })
-            ->after(function () {
-                Log::info('queue:retry --queue=default command Finished in Scheduler');
-            })
             ->runsInMaintenanceMode();
     }
 

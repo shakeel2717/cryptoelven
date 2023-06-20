@@ -16,6 +16,9 @@
         .card {
             overflow: scroll;
         }
+        .box-card {
+            overflow: hidden;
+        }
     </style>
 </head>
 
