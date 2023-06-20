@@ -235,7 +235,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Answer: The minimum withdrawal amount is $30.
+                                Answer: The minimum withdrawal amount is $20.
                             </div>
                         </div>
                     </div>

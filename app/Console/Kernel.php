@@ -65,14 +65,14 @@ class Kernel extends ConsoleKernel
             ->runsInMaintenanceMode();
 
 
-        $schedule->command('queue:work --max-time=300 --tries=1')
+        $schedule->command('queue:work --stop-when-empty')
             ->withoutOverlapping()
-            ->everyTenMinutes()
+            ->everyMinute()
             ->before(function () {
-                Log::info('queue:work --max-time=300 --tries=1 command Starting in Scheduler');
+                Log::info('queue:work --stop-when-empty command Starting in Scheduler');
             })
             ->after(function () {
-                Log::info('queue:work --max-time=300 --tries=1 command Finished in Scheduler');
+                Log::info('queue:work --stop-when-empty command Finished in Scheduler');
             })
             ->runsInMaintenanceMode();
 
