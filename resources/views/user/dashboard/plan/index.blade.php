@@ -18,7 +18,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('assets/plans) }}/{{ $plan->iteration }}" alt="Plan Icon" width="150">
+                                    <img src="{{ asset('assets/plans') }}/{{ $plan->iteration }}" alt="Plan Icon" width="150">
                                 </td>
                                 <td>
                                     <p>Min Withdarw: ${{ number_format(20, 2) }}</p>
