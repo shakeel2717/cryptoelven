@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <h4 class="text-center mt-3 mb-4">{{ $plan->name }}</h4>
                     <div class="text-center">
-                        <img src="{{ asset('assets/plans') }}/{{ $plan->iteration }}.svg" alt="Plan Icon" width="150">
+                        <img src="{{ asset('assets/plans') }}/{{ $plan->id }}.svg" alt="Plan Icon" width="150">
                     </div>
                     <h1 class="text-center">${{ number_format($plan->price, 2) }}</h1>
                     <h5 class="text-primary text-center mb-4">Duration: {{ $plan->duration }} Days</h5>
